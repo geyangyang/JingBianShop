@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div align="center">
+    <h1>User management</h1>
+        {% if message %} {{message}} {% endif %}
+    <form method="post">
+       UserName:{{ form.username }}
+        <br>
+        Password:{{ form.password }}
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+    </div>
+</body>
+</html>
